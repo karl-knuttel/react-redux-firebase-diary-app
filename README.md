@@ -7,7 +7,7 @@ Just a simple React-Redux-Firebase app with user authentication, user privileges
 This app requires a file in the src directory called 'firebase.js'.
 This file stores all of your firebase data so that you, and other users, can read and write. It looks something like this:
 
-`
+```javascript
 import \* as firebase from 'firebase';
 
 let config = {
@@ -24,7 +24,7 @@ export const database = firebase.database().ref('/notes');
 export const auth = firebase.auth();
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
 export const facebookProvider = new firebase.auth.FacebookAuthProvider();
-`
+```
 
 These settings can be found in your firebase console. Set up your database, then under project overview hit the </> button. A popup will appear with your credentials.
 
